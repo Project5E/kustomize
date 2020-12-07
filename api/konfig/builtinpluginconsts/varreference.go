@@ -60,6 +60,9 @@ varReference:
 - path: spec/template/spec/volumes/nfs/server
   kind: DaemonSet
 
+- path: spec/template/spec/affinity/podAntiAffinity/requiredDuringSchedulingIgnoredDuringExecution/labelSelector/matchLabels
+  kind: Deployment
+
 - path: spec/template/spec/containers/args
   kind: Deployment
 
@@ -67,6 +70,9 @@ varReference:
   kind: Deployment
 
 - path: spec/template/spec/containers/env/value
+  kind: Deployment
+
+- path: spec/template/spec/containers/image
   kind: Deployment
 
 - path: spec/template/spec/containers/volumeMounts/mountPath
